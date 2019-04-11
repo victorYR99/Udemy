@@ -20,6 +20,7 @@ public class LoginController {
 			flash.addFlashAttribute("info","Ya ha iniciado sesion anteriormente");
 			return "redirect:/";
 		}
+		
 		if(error != null) {
 			model.addAttribute("error", "El Nombre o la Contraseña no son correctos, Intentelo de nuevo");
 		}
